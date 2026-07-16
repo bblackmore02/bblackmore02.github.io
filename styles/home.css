@@ -1,0 +1,125 @@
+/* hero (2 columns) */
+.hero {
+  padding: 60px 0 90px;
+  position: relative;
+}
+.hero .wrap {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero-inner {
+  max-width: 420px;
+  flex: 1 1 340px;
+}
+.hero h1 {
+  font-size: clamp(36px, 6vw, 58px);
+  margin-top: 6px;
+}
+.hero h1 .period {
+  color: var(--blueberry-dark);
+}
+.hero p {
+  margin-top: 16px;
+  color: var(--ink-dim);
+  font-size: 15.5px;
+  max-width: 46ch;
+}
+.hero p .role {
+  color: var(--ink);
+  font-weight: 600;
+}
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+/* hero placement of the about_me.txt window */
+.hero .win {
+  flex: 0 0 420px;
+  width: 420px;
+  margin-top: 4px;
+  transform: rotate(2deg);
+}
+@media (max-width: 900px) {
+  .hero .win {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 460px;
+    transform: rotate(-1deg);
+  }
+}
+
+/* around the site also grid pattern*/
+.around-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--greige);
+}
+.around-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(30, 30, 30, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 30, 30, 0.09) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.around-section .wrap {
+  position: relative;
+  z-index: 1;
+}
+.scrap-cards {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+.scrap-card {
+  width: 250px;
+  background: var(--white);
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  padding: 20px 18px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  transition:
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease;
+}
+.scrap-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+.scrap-card:nth-child(1)::before {
+  background: var(--blueberry-dark);
+}
+.scrap-card:nth-child(2)::before {
+  background: var(--blueberry);
+}
+.scrap-card:nth-child(3)::before {
+  background: var(--sage);
+}
+.scrap-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 5px 6px 0 var(--ink);
+}
+.scrap-card h3 {
+  font-size: 16px;
+}
+.scrap-card p {
+  font-size: 13px;
+  color: var(--ink-dim);
+  margin-top: 6px;
+}

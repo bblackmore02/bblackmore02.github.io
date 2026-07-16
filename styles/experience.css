@@ -1,0 +1,72 @@
+/* grid pattern */
+.jobs-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--greige);
+}
+.jobs-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(30, 30, 30, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 30, 30, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.jobs-section .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+/* job list */
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: 10px;
+}
+
+.job-win .role {
+  font-family: var(--display);
+  font-size: 19px;
+  font-weight: 600;
+}
+.job-win .org {
+  font-size: 13.5px;
+  color: var(--ink-dim);
+  margin-top: 4px;
+}
+.job-win .dates {
+  display: inline-block;
+  font-family: var(--pixel);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--blueberry);
+  border: 2px solid var(--ink);
+  padding: 4px 9px;
+  margin-top: 12px;
+}
+
+.job-win ul {
+  list-style: none;
+  margin-top: 18px;
+}
+.job-win li {
+  font-size: 14px;
+  color: var(--ink-dim);
+  line-height: 1.7;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.job-win li:last-child {
+  margin-bottom: 0;
+}
+.job-win li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--blueberry-dark);
+}

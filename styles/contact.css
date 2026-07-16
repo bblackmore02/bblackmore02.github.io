@@ -1,0 +1,52 @@
+/* hero (2 columns) */
+.contact-hero .wrap {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-hero .hero-inner {
+  max-width: 440px;
+  flex: 1 1 320px;
+}
+.contact-hero h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-top: 6px;
+}
+.contact-hero p {
+  margin-top: 16px;
+  color: var(--ink-dim);
+  font-size: 15px;
+  max-width: 48ch;
+}
+
+/* contact window */
+.contact-win {
+  flex: 0 0 280px;
+  width: 280px;
+  margin-top: 4px;
+  transform: rotate(-2deg);
+}
+@media (max-width: 760px) {
+  .contact-win {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 340px;
+    transform: rotate(-1deg);
+  }
+}
+.contact-win .field:last-child {
+  margin-bottom: 0;
+}
+.contact-value {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  display: block;
+  transition: color 0.2s ease;
+}
+a.contact-value:hover {
+  color: var(--blueberry-dark);
+}
