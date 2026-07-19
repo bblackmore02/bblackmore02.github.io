@@ -81,6 +81,9 @@
   margin-top: 10px;
   justify-content: center;
 }
+.scrap-cards a {
+  text-decoration: none;
+}
 .scrap-card {
   width: 250px;
   background: var(--white);
@@ -102,13 +105,13 @@
   right: 0;
   height: 6px;
 }
-.scrap-card:nth-child(1)::before {
+.scrap-cards a:nth-child(1) .scrap-card::before {
   background: var(--blueberry-dark);
 }
-.scrap-card:nth-child(2)::before {
+.scrap-cards a:nth-child(2) .scrap-card::before {
   background: var(--blueberry);
 }
-.scrap-card:nth-child(3)::before {
+.scrap-cards a:nth-child(3) .scrap-card::before {
   background: var(--sage);
 }
 .scrap-card:hover {

@@ -417,7 +417,7 @@ footer {
   justify-content: center;
   border: 2px solid;
   border-color: #fff var(--ink) var(--ink) #fff;
-  background: var(--white);
+  background: var(--wash);
   text-decoration: none;
   color: var(--ink);
   transition: background 0.15s ease;
