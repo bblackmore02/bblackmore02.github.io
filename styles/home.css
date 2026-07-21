@@ -50,8 +50,30 @@
     flex: 1 1 100%;
     width: 100%;
     max-width: 460px;
-    transform: rotate(-1deg);
+    transform: rotate(0deg);
   }
+}
+
+/* compact the window's fields so its height matches the text column beside it */
+.hero .win .win-body {
+  padding: 14px 14px;
+}
+.hero .win .field {
+  padding: 8px 10px;
+  margin-bottom: 8px;
+}
+.hero .win .field:last-child {
+  margin-bottom: 0;
+}
+.hero .win .field-label {
+  margin-bottom: 6px;
+}
+.hero .win .chip-row {
+  gap: 5px;
+}
+.hero .win .chip {
+  padding: 4px 8px;
+  font-size: 11px;
 }
 
 /* around the site also grid pattern*/
