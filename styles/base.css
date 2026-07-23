@@ -9,6 +9,7 @@
   --greige: #f0f4ec;
   --greige-mid: #edf2e8;
   --greige-dark: #e0ddd7;
+  --yellow: #f1ee8e;
   --display: "Space Grotesk", sans-serif;
   --hand: "Caveat", cursive;
   --pixel: "JetBrains Mono", monospace;
@@ -132,7 +133,7 @@ nav {
   font-family: var(--pixel);
   font-size: 10px;
   font-weight: 600;
-  background: var(--blueberry);
+  background: var(--yellow);
   border: 2px solid var(--ink);
   padding: 5px 10px;
   margin-bottom: 16px;
