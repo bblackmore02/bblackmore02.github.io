@@ -103,7 +103,7 @@
     flex: 1 1 100%;
     width: 100%;
     max-width: 340px;
-    transform: rotate(-1deg);
+    transform: none;
   }
 }
 .stack-win .field:last-child {

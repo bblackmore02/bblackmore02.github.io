@@ -50,7 +50,7 @@
     flex: 1 1 100%;
     width: 100%;
     max-width: 460px;
-    transform: rotate(0deg);
+    transform: none;
   }
 }
 
